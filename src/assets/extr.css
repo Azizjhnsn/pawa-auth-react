@@ -1,0 +1,265 @@
+/* Sign up form *********************
+************************************ */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  padding-bottom: 10px;
+  border: solid 1px black;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 5px 10px rgb(175, 174, 174) ;
+  height: auto;
+  margin-left: 5%;
+}
+
+@media only screen and (min-width: 576px) {
+  .form {
+    margin-left: 30%;
+  }
+}
+
+.title {
+  font-size: 28px;
+  color: #FFC000;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #FFC000;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: #FFC000;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: #FFC000;
+}
+
+.signin a:hover {
+  text-decoration: underline #FFC000;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 8px 8px 16px 8px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.section-input {
+  width: 100%;
+  padding: 8px 8px 16px 8px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: rgb(6, 6, 6);
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #FFC000;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(253, 220, 4);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+
+  /* OTP form *********************
+************************************ */
+
+.otp-Form {
+    width: 230px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 20px;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 2%;
+  }
+  
+  .mainHeading {
+    font-size: 1.1em;
+    color: rgb(15, 15, 15);
+    font-weight: 700;
+  }
+  
+  .otpSubheading {
+    font-size: 0.7em;
+    color: black;
+    line-height: 17px;
+    text-align: center;
+  }
+  
+  .inputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .otp-input {
+    background-color: rgb(228, 228, 228);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    caret-color: #FFC000;
+    color: rgb(44, 44, 44);
+    outline: none;
+    font-weight: 600;
+  }
+  
+  .otp-input:focus,
+  .otp-input:valid {
+    background-color: rgba(127, 129, 255, 0.199);
+    transition-duration: .3s;
+  }
+  
+  .verifyButton {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: #FFC000;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: .2s;
+  }
+  
+  .verifyButton:hover {
+    background-color: rgb(255, 239, 12);
+    transition-duration: .2s;
+  }
+  
+  .exitBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: none;
+    color: black;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+  
+  .resendNote {
+    font-size: 0.7em;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .resendBtn {
+    background-color: transparent;
+    border: none;
+    color: #FFC000;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+
