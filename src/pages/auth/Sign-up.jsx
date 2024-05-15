@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Form from 'react-bootstrap/Form';
-import Footer from "../components/footer";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -168,7 +167,6 @@ const Signup = () => {
           Already have an account? <a href="/login">Sign in</a>{" "}
         </p>
       </form>
-      <Footer/>
     </>
   );
 };

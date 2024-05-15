@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Footer from '../components/footer';
 
 function OTP() {
   const [otp, setOTP] = useState(['', '', '', '']);
@@ -50,7 +49,6 @@ function OTP() {
           Didn't receive the code? <button className="resendBtn">Resend Code</button>
         </p>
       </form>
-      <Footer/>
     </>
   );
 }

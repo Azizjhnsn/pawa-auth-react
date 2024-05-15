@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Form from 'react-bootstrap/Form';
-import Footer from "../components/footer";
 import { Link } from 'react-router-dom';
 
 const LogIn = () => {
@@ -119,7 +118,6 @@ const LogIn = () => {
           Don't have an account? <Link to="/signup">Sign up</Link>{" "}
         </p>
       </form>
-      <Footer/>
     </>
   );
 };
